@@ -18,11 +18,17 @@ function Movies(){
     console.log(movieList)
 
     return(
-    <div>
+    <div className="container">
         <div className="cards">
             {movieList.map((movie)=>(
-                <img  className="movieCards" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movieimg"/>
+                <span>
+                    <img  className="movieCards" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movieimg"/>
+                    <h5>{movie.title}</h5>
+                    
+
+                </span>
             ))}
+            
         </div>
     </div>
     )
