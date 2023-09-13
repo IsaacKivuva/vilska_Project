@@ -3,11 +3,17 @@
     color: white;
 }
 
-.movieCards{
-    columns: 5 340px;
-    gap: 50px;
+
+.cards{
+    columns: 4 10px;
+    column-gap: 10px;
+    gap: 10px;
+}
+
+
+.movieCards{    justify-content: space-around;
+
     width: 300px;
     height: 250px;
-
-
+    padding: 20px;
 }

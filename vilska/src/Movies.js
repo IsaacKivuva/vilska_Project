@@ -18,11 +18,13 @@ function Movies(){
     console.log(movieList)
 
     return(
-        <div>
+    <div>
+        <div className="cards">
             {movieList.map((movie)=>(
                 <img  className="movieCards" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movieimg"/>
             ))}
         </div>
+    </div>
     )
 }
 
