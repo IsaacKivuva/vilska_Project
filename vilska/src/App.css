@@ -24,4 +24,11 @@
     width: 100%;
     border-radius: 20px;
     padding: 15px;
+    cursor: pointer;
+
+}
+
+.movieTitle{
+    text-align: center;
+    cursor: pointer;
 }

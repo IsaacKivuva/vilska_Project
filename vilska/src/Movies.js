@@ -15,7 +15,7 @@ function Movies(){
         getMovie()
     },[])
 
-    console.log(movieList)
+    // console.log(movieList)
 
     return(
     <div className="container">
@@ -23,7 +23,7 @@ function Movies(){
             {movieList.map((movie)=>(
                 <span>
                     <img  className="movieCards" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movieimg"/>
-                    <h5>{movie.title}</h5>
+                    <h4 className="movieTitle">{movie.title}</h4>
                     
 
                 </span>
