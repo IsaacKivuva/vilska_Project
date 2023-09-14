@@ -32,3 +32,9 @@
     text-align: center;
     cursor: pointer;
 }
+
+.form-container{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
