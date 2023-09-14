@@ -4,6 +4,7 @@ import Account from "./Account";
 import Movies from "./Movies";
 import NavBar from "./NavBar";
 import About from "./About";
+import Reviews from "./Reviews"
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
       <Route path="/" element={<Account />} />
       <Route path="/movies" element={<Movies />} />
       <Route path="/about" element={<About />} />
+      <Route path="/reviews" element={<Reviews />} />
       </Routes>
     </div>
   );
