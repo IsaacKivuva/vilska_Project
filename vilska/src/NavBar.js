@@ -11,6 +11,10 @@ function NavBar(){
             <NavLink to="/movies">
                Movies
             </NavLink>
+            <NavLink to="/about">
+               ABout
+            </NavLink>
+            
         </div>
     );
 }
