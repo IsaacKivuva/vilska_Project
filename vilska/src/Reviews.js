@@ -12,7 +12,7 @@ function Reviews() {
         content: newReview,
       };
 
-      // Add the new review to the existing reviews list
+      // Add the new review 
       setReviews([...reviews, review]);
 
       // Clear the input field
@@ -21,7 +21,7 @@ function Reviews() {
   };
 
   const handleDeleteReview = (id) => {
-    // Filter out the review with the specified ID
+    // Filter out the review 
     const updatedReviews = reviews.filter((review) => review.id !== id);
     setReviews(updatedReviews);
   };
