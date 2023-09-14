@@ -7,6 +7,7 @@ function NavBar(){
             <NavLink to="/">
                Account
             </NavLink>
+            <br/>
             <NavLink to="/movies">
                Movies
             </NavLink>

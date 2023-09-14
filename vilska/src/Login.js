@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function Login(props){
+function Login({onFormSwitch, onLogin}){
     const [email, setEmail]=useState('');
     const [password, setPassword]=useState('');
 
@@ -17,7 +17,7 @@ function Login(props){
             <input value={password} onChange={(e)=> setPassword(e.target.value)} type='password' placeholder='Enter Password' id='password' name='password' />
             <button>Login</button>
         </form> 
-        <button className="btn" onClick={() => props.onFormSwitch('register')}>Create a new account!</button>
+        <button className="btn" onClick={() =>onFormSwitch('register')}>Create a new account!</button>
         </div>
     );
 }

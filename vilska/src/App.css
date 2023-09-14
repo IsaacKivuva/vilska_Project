@@ -44,8 +44,10 @@
     padding: 7rem;
     border: 2px solid white;
     border-radius: 30px;
+    box-shadow: 5px 5px 5px;
+    background: rgba(168, 54, 65, 0.51);
 }
-.form-container, .login-form, .register-form {
+    .form-container, .login-form, .register-form {
   display: flex;
   flex-direction: column;
 }
@@ -63,8 +65,12 @@ input{
 button{
     border: none;
     background-color: white;
-    padding: 20px;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
     cursor: pointer;
     color: rgb(217, 17, 67);
 }
