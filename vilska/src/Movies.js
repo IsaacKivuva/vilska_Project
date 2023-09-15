@@ -14,16 +14,18 @@ function Movies() {
     fetch(apiUrl)
       .then((r) => r.json())
       .then((data) => setMovieList(data.results));
-  }, [searchQuery]);
+  }, [searchQuery]); 
 
   console.log(movieList);
 
   return (
     <div>
+      <div className="search">
         <SearchBar onSearch={setSearchQuery}/>
+      </div>  
       <div className="cards">
         {movieList.map((movie) => (
-         <span>
+         <span className="uno">
           <img
             className="movieCards"
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}

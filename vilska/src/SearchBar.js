@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css"
 
 function SearchBar({ onSearch }) {
   const [searchQuery, setSearchQuery] = useState("");
@@ -12,8 +13,8 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <div>
-      <input
+    <div className="search">
+      <input 
         type="text"
         placeholder="Search for movies..."
         value={searchQuery}

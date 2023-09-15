@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css"
 
 function Reviews() {
   const [reviews, setReviews] = useState([]);
