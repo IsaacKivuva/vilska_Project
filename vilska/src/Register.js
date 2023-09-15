@@ -1,12 +1,27 @@
 import React, {useState} from "react";
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+
 
 function Register(props){
-    const [email, setEmail]=useState('');
-    const [password, setPassword]=useState('');
     const [name, setName]=useState('');
+    const [password, setPassword]=useState('');
+    
+    const navigate=useNavigate();
 
     function handleSubmit(e){
         e.preventDefault();
+        let regobj={name,password};
+        fetch('http://localhost:8000/user',{
+            method:'POST',
+            headers:{'content-type':'application/json'},
+            body:JSON.stringify(regobj)
+        }).then((res)=>{
+            toast.success('Registerd Successfully.')
+            navigate('/Movies');
+        }).catch((err)=>{
+            toast.err('Failed:'+err.message);
+        });
     }
     return(
         <div className="form-container">
@@ -14,8 +29,6 @@ function Register(props){
         <form className="register-form" onSubmit={handleSubmit}>
         <label htmlFor='Full Name' />
             <input value={name} onChange={(e)=> setName(e.target.value)} type='name' placeholder='Full Name' id='name' name='name' />
-            <label htmlFor='email' />
-            <input value={email} onChange={(e)=> setEmail(e.target.value)} type='email' placeholder='Email Address' id='email' name='email' />
             <label htmlFor='password' />
             <input value={password} onChange={(e)=> setPassword(e.target.value)} type='password' placeholder='Enter Password' id='password' name='password' />
             <button>Register</button>
