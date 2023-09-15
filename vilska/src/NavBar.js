@@ -17,10 +17,10 @@ function NavBar(){
             <NavLink to="/movies">
                Movies
             </NavLink>
-            <NavLink to="/reviews">
+                        <NavLink to="/reviews">
                Reviews
             </NavLink>
-            <NavLink to="/about"> 
+<NavLink to="/about"> 
                About
             </NavLink>
             

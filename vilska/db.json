@@ -4,6 +4,31 @@
       "name": "Admin",
       "password": "Admin password",
       "id": 1
+    },
+    {
+      "name": "username",
+      "password": "password",
+      "id": 2
+    },
+    {
+      "name": "laleti",
+      "password": "testing",
+      "id": 3
+    },
+    {
+      "name": "admin",
+      "password": "test 2",
+      "id": 4
+    },
+    {
+      "username": "login admin",
+      "password": "login admin",
+      "id": 5
+    },
+    {
+      "username": "final testing",
+      "password": "password",
+      "id": 6
     }
   ]
 }
