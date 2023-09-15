@@ -29,6 +29,11 @@
       "username": "final testing",
       "password": "password",
       "id": 6
+    },
+    {
+      "username": "admin",
+      "password": "dddddd",
+      "id": 7
     }
   ]
 }

@@ -11,6 +11,7 @@ function Login({onFormSwitch}){
     function handleSubmit(e){
         e.preventDefault();
         let regobj={username,password};
+        
         fetch('http://localhost:8000/user',{
             method:'POST',
             headers:{'content-type':'application/json'},

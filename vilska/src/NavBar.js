@@ -17,11 +17,16 @@ function NavBar(){
             <NavLink to="/movies">
                Movies
             </NavLink>
-                        <NavLink to="/reviews">
+            <NavLink to="/about"> 
+               About
+            </NavLink>
+           
+            <NavLink to="/reviews">
                Reviews
             </NavLink>
-<NavLink to="/about"> 
-               About
+
+            <NavLink to="/"> 
+               Logout
             </NavLink>
             
         </div>
