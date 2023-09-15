@@ -33,13 +33,16 @@ function Reviews() {
 
       <div className="add-review">
         <textarea
+          className="review"
           rows="4"
           cols="50"
           value={newReview}
           onChange={(e) => setNewReview(e.target.value)}
           placeholder="Write your review here"
         />
-        <button onClick={handleAddReview}>Submit Review</button>
+        
+        <button className="submit" onClick={handleAddReview}>Submit Review</button>
+
       </div>
 
       <div className="review-list">
