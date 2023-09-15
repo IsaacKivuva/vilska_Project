@@ -44,8 +44,6 @@
 
 }
 
-
-
 .movieCards{  
     display: flex;
     justify-content: center; 
@@ -78,8 +76,13 @@
   display: flex;
   flex-direction: column;
 }
+.register-form{
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 10px;
+}
 label{
-    text-align: left;
+    text-align: center;
     padding: 0.25rem 0;
 }
 
@@ -102,8 +105,9 @@ button{
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 10px;
-    margin-left: 20px;
-    /* margin-right: 60px; */
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
     cursor: pointer;
     color: rgb(217, 17, 67);
 }

@@ -49,6 +49,11 @@
       "username": "admin",
       "password": "password",
       "id": 10
+    },
+    {
+      "username": "admin",
+      "password": "adminuser",
+      "id": 11
     }
   ]
 }
