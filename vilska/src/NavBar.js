@@ -9,10 +9,6 @@ function NavBar(){
             <header className="heading">
                <h1>vislka.</h1>
             </header>
-
-            <NavLink to="/">
-               Account
-            </NavLink>
             
             <NavLink to="/movies">
                Movies

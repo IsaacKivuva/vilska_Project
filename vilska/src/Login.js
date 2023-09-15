@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,6 +7,9 @@ function Login({onFormSwitch}){
     const [password, setPassword]=useState('');
  
     const navigate=useNavigate();
+    useEffect(()=>{
+        sessionStorage.clear()
+    },[])
 
     function handleSubmit(e){
         e.preventDefault();

@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, useLocation} from "react-router-dom";
 import Account from "./Account";
 import Movies from "./Movies";
 import NavBar from "./NavBar";
@@ -8,12 +8,13 @@ import Reviews from "./Reviews"
 import {ToastContainer} from 'react-toastify';
 
 function App() {
-  
+  const location = useLocation();
+  const isAccountPage = location.pathname === '/';
   return (
     <div>
       <ToastContainer theme='colored'></ToastContainer>
-      <NavBar />
-      <Routes>
+      {!isAccountPage && <NavBar />}
+       <Routes>
        <Route path="/" element={<Account />} />
        <Route path="/movies" element={<Movies />} />
        <Route path="/about" element={<About />} />
